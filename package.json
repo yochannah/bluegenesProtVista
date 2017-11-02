@@ -1,0 +1,17 @@
+{
+  "name": "bluegenes-protvista",
+  "version": "1.0.0",
+  "description": "BlueGenes wrapper for protvista protein feature viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bluegenes-intermine-tol"
+  ],
+  "author": "Yo Yehudi",
+  "license": "LGPL-2.1",
+  "dependencies": {
+    "ProtVista": "^2.0.5"
+  }
+}
