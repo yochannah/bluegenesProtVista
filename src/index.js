@@ -7,3 +7,4 @@ var bluegenesProtvista = function (el, service, package, state) {
         uniprotacc: 'P05067'
     });
 }
+
