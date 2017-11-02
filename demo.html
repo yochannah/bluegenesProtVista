@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlueGenes Protvista demo</title>
+    <script src="node_modules/ProtVista/build/protvista.min.js"></script>
+    <script src="src/index.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id='yourDiv' />
+    <script>
+        window.onload = function () {
+            bluegenesProtvista(
+                document.getElementById("yourDiv"), {
+                    root: "www.flymine.org/query"
+                }, {
+                    "class": "Protein",
+                    "format": "id",
+                    "value": [19163524]
+                });
+        }
+    </script>
+
+</body>
+
+</html>
