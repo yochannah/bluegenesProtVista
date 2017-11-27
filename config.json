@@ -5,5 +5,5 @@
     "classes": [
         "Protein"
     ],
-    "defaultColumnMapping" : {"id" : "uniprotAccession"}
+        "columnMapping" : {"Protein" : {"id": "primaryAccession"}}
 }
