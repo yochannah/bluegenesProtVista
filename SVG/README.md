@@ -1,0 +1,1 @@
+note - this directory is manually copied and pasted to the root folder to work with the bundled version of the protvista js

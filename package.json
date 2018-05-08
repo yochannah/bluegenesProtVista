@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "imjs": "^3.15.1",
+    "less": "^3.0.4",
+    "less-plugin-clean-css": "^1.5.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   }

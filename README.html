@@ -1,0 +1,37 @@
+<h1 id="bluegenesprotvista">bluegenesProtVista</h1>
+<p>Wrapper around the uniprot protvista protein feature viewer</p>
+<p>This is a prototype tool for the BlueGenes Tool API, and roughly fits the expected format of BlueGenes tool API behaviour. It is loosely based on <a href="https://gist.github.com/joshkh/76091f1182d425934c1c5dbe2644d23a">this spec</a></p>
+<h3 id="note-the-following">Note the following</h3>
+<ul>
+<li><strong>config.json</strong> is read by BlueGenes to allow BlueGenes to know what type of data the tool supports.</li>
+<li><strong>preview.png</strong> is optional, but will be used in the longer term in a tool admin UI to allow people to enable / disable / configure tools.</li>
+<li><strong>package.json</strong> is the default npm config but it also used by bluegenes to glean information like the script entry point (main), tool name and the tool&#39;s dependencies.<ul>
+<li><code>dependencies</code> will be automatically installed by bluegenes</li>
+<li><code>devDependencies</code> will not be automatically installed and may be items like imtables (which bluegenes will provide on the window) or jquery. (versions to be confirmed).</li>
+</ul>
+</li>
+<li><strong>src/index.js</strong> is the important part - the visualiser is initialised here. Note the method name matches the package name, and note the method signature - this is what all tools will expect to receive from bluegenes</li>
+<li><strong>demo.html</strong> has comments explaining what&#39;s going on, too, but is mostly there so people can see what the vis looks like as part of a standalone package. It is optional.</li>
+</ul>
+<h3 id="to-set-up-locally">To set up locally</h3>
+<ol>
+<li>Clone the repo</li>
+<li><code>cd bluegenesProtVista</code> and then <code>npm install</code> to install dependencies.</li>
+<li>Open demo.html to see the demo working live.</li>
+</ol>
+<h3 id="what-it-will-look-like-in-bluegenes-">What it will look like in bluegenes.</h3>
+<p>(Once the tool API is fully implemented)</p>
+<ul>
+<li>Bluegenes will npm install any dependencies.</li>
+<li>Bluegenes will automatically generate code to pass the correct identifiers to src/index.js</li>
+<li>Bluegenes will copy and sandbox any css in app.css.</li>
+</ul>
+<h3 id="modifying-the-code">Modifying the code</h3>
+<p>All of the editable source files for css and js are in <code>src</code>. To bundle for prod, run the following commands:</p>
+<h4 id="css">CSS</h4>
+<p>Assuming <a href="http://lesscss.org/">less</a> is installed globally:</p>
+<pre><code>lessc src/style.css dist/style.css --clean-css
+</code></pre><h4 id="js">JS</h4>
+<p>Assuming <a href="https://webpack.js.org/">webpack</a> is installed globally:</p>
+<pre><code>npx webpack
+</code></pre>

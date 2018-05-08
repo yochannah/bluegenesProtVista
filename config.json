@@ -1,9 +1,13 @@
 {
-    "accepts": [
-        "id" 
-    ],
-    "classes": [
-        "Protein"
-    ],
-        "columnMapping" : {"Protein" : {"id": "primaryAccession"}}
+  "accepts": [
+    "id"
+  ],
+  "classes": [
+    "Protein"
+  ],
+  "columnMapping": {
+    "Protein": {
+      "id": "primaryAccession"
+    }
+  }
 }

@@ -6,8 +6,8 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    library : "bluegenesProtvista",
-    libraryTarget : "var"
+    library: "bluegenesProtvista",
+    libraryTarget: "var"
   },
   optimization: {
     minimize: true
