@@ -13,11 +13,7 @@
     <!-- You can assume imjs is on the window.  -->
     <script src="node_modules/imjs/dist/im.min.js"></script>
 
-    <!-- Any dependencies from package.json -->
-    <script src="node_modules/ProtVista/build/protvista.min.js"></script>
-
     <!-- this is the code that changes ProtVista to a BlueGenes initialisable component -->
-    <script src="src/index.js"></script>
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -27,7 +23,7 @@
         window.onload = function () {
             //The element to attach the viewer to. Must be an existing DOM element
             var elem = document.getElementById("yourDiv"),
-                //InterMine service, including URL and token. 
+                //InterMine service, including URL and token.
                 imURL = {
                     root: "www.flymine.org/query"
                     //could include token here too if we had one
@@ -38,20 +34,21 @@
                     "class": "Protein",
                     "format": "id",
                     //right now these ids correspond to two
-                    //isoforms of lola2 
+                    //isoforms of lola2
                     "value": 1172489
-                    //"value": 19223848 
+                    //"value": 19223848
                 },
-                toolState = null; //to be confirmed how we use this. 
+                toolState = null; //to be confirmed how we use this.
             //showing how we dynamically load the config file
             $.ajax("config.json").then(function (config) {
-                //init the app, as per 
+                //init the app, as per
                 //https://gist.github.com/joshkh/76091f1182d425934c1c5dbe2644d23a
-                bluegenesProtvista(
+                bluegenesProtvista.main(
                     elem, imURL, dataToInitialiseToolWith, toolState, config);
             });
         }
     </script>
+    <script src="dist/bundle.js"></script>
 
 </body>
 
