@@ -2,7 +2,7 @@
 
 Wrapper around the uniprot protvista protein feature viewer
 
-This is a prototype tool for the BlueGenes Tool API, and roughly fits the expected format of BlueGenes tool API behaviour. It is loosely based on [this spec](https://gist.github.com/yochannah/69ab9d1fd9721cb9a701805832c39937)
+This is a prototype tool for the BlueGenes Tool API, and roughly fits the expected format of BlueGenes tool API behaviour. It is based on [this spec](https://gist.github.com/yochannah/69ab9d1fd9721cb9a701805832c39937).
 
 ### Note the following
 
