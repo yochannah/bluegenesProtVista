@@ -25,7 +25,7 @@
             var elem = document.getElementById("yourDiv"),
                 //InterMine service, including URL and token.
                 imURL = {
-                    root: "https://yeastmine.yeastgenome.org/yeastmine/"
+                    root: "www.flymine.org/query"
                     //could include token here too if we had one
                 },
                 //this is an example of data that could be passed to this tool be BlueGenes
@@ -33,7 +33,10 @@
                 dataToInitialiseToolWith = {
                     "class": "Protein",
                     "format": "id",
-                    "value": 3663429
+                    //right now these ids correspond to two
+                    //isoforms of lola2
+                    "value": 1172489
+                    //"value": 19223848
                 },
                 toolState = null; //to be confirmed how we use this.
             //showing how we dynamically load the config file
