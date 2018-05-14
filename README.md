@@ -14,15 +14,10 @@ This is a prototype tool for the BlueGenes Tool API, and roughly fits the expect
  - **src/index.js** is the important part - the visualiser is initialised here. Note the method name matches the package name, and note the method signature - this is what all tools will expect to receive from bluegenes
  - **demo.html** has comments explaining what's going on, too, but is mostly there so people can see what the vis looks like as part of a standalone package. It is optional.
 
-### To set up locally
+### To set up locally for development
 
 1. Clone the repo
 2. `cd bluegenesProtVista` and then `npm install` to install dependencies.
-3. Open demo.html to see the demo working live.
-
-- Bluegenes will automatically generate code to pass the correct identifiers to dist/bundle.js
-
-### Modifying the code
 
 All of the editable source files for css and js are in `src`. To bundle for prod, run the following commands:
 
