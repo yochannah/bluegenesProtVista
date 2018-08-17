@@ -1,5 +1,5 @@
 {
-  "name": "bluegenes-protvista",
+  "name": "@intermine/bluegenes-protvista",
   "version": "1.0.0",
   "description": "BlueGenes wrapper for protvista protein feature viewer",
   "main": "src/index.js",
