@@ -1,10 +1,13 @@
 {
-  "name": "Bluegenes Protvista",
+  "name": "bluegenes-protvista",
   "version": "1.0.0",
   "description": "BlueGenes wrapper for protvista protein feature viewer",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack --watch",
+    "less": "lessc src/style.less dist/style.css --clean-css"
   },
   "keywords": [
     "bluegenes-intermine-tool"
@@ -20,5 +23,9 @@
     "less-plugin-clean-css": "^1.5.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intermine/bluegenesProtVista"
+  },
 }
