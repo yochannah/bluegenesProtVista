@@ -2,7 +2,7 @@
 
 Wrapper around the uniprot protvista protein feature viewer
 
-This is a prototype tool for the BlueGenes Tool API, and roughly fits the expected format of BlueGenes tool API behaviour. It is loosely based on [this spec](https://gist.github.com/joshkh/76091f1182d425934c1c5dbe2644d23a)
+This is a prototype tool for the BlueGenes Tool API, and roughly fits the expected format of BlueGenes tool API behaviour. It is based on [this spec](https://gist.github.com/yochannah/69ab9d1fd9721cb9a701805832c39937).
 
 ### Note the following
 
@@ -14,18 +14,10 @@ This is a prototype tool for the BlueGenes Tool API, and roughly fits the expect
  - **src/index.js** is the important part - the visualiser is initialised here. Note the method name matches the package name, and note the method signature - this is what all tools will expect to receive from bluegenes
  - **demo.html** has comments explaining what's going on, too, but is mostly there so people can see what the vis looks like as part of a standalone package. It is optional.
 
-### To set up locally
+### To set up locally for development
 
 1. Clone the repo
 2. `cd bluegenesProtVista` and then `npm install` to install dependencies.
-3. Open demo.html to see the demo working live.
-
-### What it will look like in bluegenes.
-
- Bluegenes will automatically generate code to pass the correct identifiers to src/index.js
-
-
-### Modifying the code
 
 All of the editable source files for css and js are in `src`. To bundle for prod, run the following commands:
 
