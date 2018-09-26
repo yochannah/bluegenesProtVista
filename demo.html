@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="bluegenesProtvista" id='yourDiv' />
+    <div class="bluegenesToolProtvista" id='yourDiv' />
     <script>
         window.onload = function () {
             //The element to attach the viewer to. Must be an existing DOM element
@@ -43,7 +43,7 @@
             $.ajax("config.json").then(function (config) {
                 //init the app, as per
                 //https://gist.github.com/joshkh/76091f1182d425934c1c5dbe2644d23a
-                bluegenesProtvista.main(
+                bluegenesToolProtvista.main(
                     elem, imURL, dataToInitialiseToolWith, toolState, config);
             });
         }

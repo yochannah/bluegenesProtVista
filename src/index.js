@@ -7,11 +7,9 @@ export function main (el, service, imEntity, state, config) {
     var accession = new imjs.Service(service)
         .findById(imEntity.class, imEntity.value)
         .then(function(response) {
-//            var ProtVista = require('ProtVista');
             var instance = new ProtVista({
                 el: el,
                 uniprotacc: response[columnToConvert]
         });
     });
 }
-//export default bluegenesProtvista;
