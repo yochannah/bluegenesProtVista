@@ -16,6 +16,6 @@
   },
   "toolName" : {
     "human": "Protein Features",
-    "cljs" : "bluegenesProtVista"
+    "cljs" : "bluegenesToolProtvista"
   }
 }
